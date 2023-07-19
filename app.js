@@ -23,14 +23,6 @@ if (process.env.PORT) {
   PORT = 80;
 }
 
-var app = express();
-app.get('/', function (req, res) {
-  res.send("Voy a intentar cargar otro archivo .js. Esperemos funcione");
-});
-
-app.listen(PORT);
-console.log(' Application Running on port' + PORT);
-
 // Lista de nombres para cada género
 const maleNames = ['Carlos', 'Juan', 'Miguel', 'Alejandro', 'José'];
 const femaleNames = ['María', 'Ana', 'Laura', 'Isabel', 'Sofía'];
