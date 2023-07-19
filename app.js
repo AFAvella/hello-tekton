@@ -30,3 +30,22 @@ app.get('/', function (req, res) {
 
 app.listen(PORT);
 console.log(' Application Running on port' + PORT);
+
+// Lista de nombres para cada género
+const maleNames = ['Carlos', 'Juan', 'Miguel', 'Alejandro', 'José'];
+const femaleNames = ['María', 'Ana', 'Laura', 'Isabel', 'Sofía'];
+
+// Función para generar un número aleatorio en un rango
+function getRandomNumber(max) {
+  return Math.floor(Math.random() * max);
+}
+
+// Función para generar nombres aleatorios
+function generateRandomName() {
+  const isMale = Boolean(getRandomNumber(2)); // Genera 0 o 1 (falso o verdadero)
+  const randomName = isMale ? maleNames[getRandomNumber(maleNames.length)] : femaleNames[getRandomNumber(femaleNames.length)];
+  
+  // Mostrar el nombre generado en el elemento con id="randomName"
+  document.getElementById('randomName').innerText = randomName;
+}
+
