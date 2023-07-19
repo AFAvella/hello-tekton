@@ -25,7 +25,7 @@ if (process.env.PORT) {
 
 var app = express();
 app.get('/', function (req, res) {
-  res.sendFile('./codigo/pruebaCodigo.java', {root: __dirname});
+  res.sendFile('codigo/pruebaCodigo.js', {root: __dirname});
 });
 
 app.listen(PORT);
