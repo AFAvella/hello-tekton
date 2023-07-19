@@ -25,7 +25,7 @@ if (process.env.PORT) {
 
 var app = express();
 app.get('/', function (req, res) {
-  res.sendFile('codigo/pruebaCodigo.js', {root: __dirname});
+  res.send("Mensaje de bienvenida al IBM Coninuous Delivery con tekton");
 });
 
 app.listen(PORT);
