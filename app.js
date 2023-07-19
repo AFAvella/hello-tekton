@@ -15,6 +15,7 @@
 **/
 
 var express = require('express');
+var path = require('path');
 
 var PORT;
 if (process.env.PORT) {
