@@ -25,7 +25,7 @@ if (process.env.PORT) {
 
 var app = express();
 app.get('/', function (req, res) {
-  res.send("Mensaje de bienvenida al IBM Coninuous Delivery con Tekton");
+  res.send("IBM Cloud");
 });
 
 app.listen(PORT);
